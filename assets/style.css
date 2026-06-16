@@ -213,6 +213,36 @@ h1 {
   transform: translateY(-1px);
 }
 
+.owner-analytics {
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  z-index: 30;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 40px;
+  padding: 8px 13px;
+  border: 1px solid rgba(24, 107, 114, 0.26);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 14px 34px rgba(28, 36, 48, 0.12);
+  color: var(--ink);
+  font-size: 0.9rem;
+  font-weight: 760;
+  text-decoration: none;
+  transition: transform 160ms ease, border-color 160ms ease;
+}
+
+.owner-analytics:hover {
+  border-color: rgba(24, 107, 114, 0.5);
+  transform: translateY(-1px);
+}
+
+.owner-analytics[hidden] {
+  display: none;
+}
+
 .profile-panel {
   align-self: stretch;
   display: flex;
@@ -230,8 +260,8 @@ h1 {
 }
 
 .profile-image {
-  width: 128px;
-  height: 128px;
+  width: 150px;
+  height: 200px;
   border: 3px solid rgba(255, 255, 255, 0.94);
   border-radius: 8px;
   object-fit: cover;
@@ -681,6 +711,12 @@ h4 {
   .site-footer {
     align-items: flex-start;
     flex-direction: column;
+  }
+
+  .owner-analytics {
+    right: 12px;
+    bottom: 12px;
+    font-size: 0.86rem;
   }
 }
 
