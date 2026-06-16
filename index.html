@@ -16,7 +16,7 @@
     <meta property="og:type" content="website">
     <meta
       http-equiv="Content-Security-Policy"
-      content="default-src 'self'; script-src 'self' https://gc.zgo.at; connect-src 'self' https://yoon-jeong-ho.goatcounter.com; img-src 'self' https://avatars.githubusercontent.com https://yoon-jeong-ho.goatcounter.com; style-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'"
+      content="default-src 'self'; script-src 'self' https://gc.zgo.at; connect-src 'self' https://yoon-jeong-ho.goatcounter.com; img-src 'self' https://yoon-jeong-ho.goatcounter.com; style-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'"
     >
     <link rel="stylesheet" href="assets/style.css">
     <script
@@ -27,7 +27,6 @@
     <script src="assets/site.js" defer></script>
   </head>
   <body>
-    <div class="scroll-progress" aria-hidden="true"></div>
     <a class="skip-link" href="#top">Skip to content</a>
     <header class="site-header">
       <a class="brand" href="#top" aria-label="Jeongho Yoon home">
@@ -63,7 +62,7 @@
         <aside class="profile-panel" aria-label="Research profile summary">
           <img
             class="profile-image"
-            src="https://avatars.githubusercontent.com/u/121810984?v=4"
+            src="assets/profile.svg"
             width="128"
             height="128"
             decoding="async"
@@ -72,15 +71,15 @@
           >
           <div class="profile-title">
             <span>NLP / LLM Researcher</span>
-            <strong>Efficient, controllable, and trustworthy pretrained models.</strong>
+            <strong>Representation-level methods for efficient and reliable language models.</strong>
           </div>
           <div class="metric">
             <strong>ACL 2026</strong>
-            <span>Main Conference papers in privacy-preserving LLMs and multilingual retrieval</span>
+            <span>Main Conference: one first-author paper on text-free LLM inference and one equal-contribution paper on multilingual retrieval</span>
           </div>
           <div class="metric">
             <strong>CVPR 2026</strong>
-            <span>Accepted as a Highlight for post-hoc uncertainty estimation</span>
+            <span>Co-authored Highlight paper on post-hoc uncertainty estimation</span>
           </div>
           <div class="focus-list" aria-label="Research focus areas">
             <span>Representation Editing</span>
@@ -155,18 +154,10 @@
           <p class="eyebrow">Publications</p>
           <h2 id="publications-title">Selected publications</h2>
         </div>
-        <div class="publication-filters" aria-label="Filter publications">
-          <button class="filter-button active" type="button" data-filter="all" aria-pressed="true">All</button>
-          <button class="filter-button" type="button" data-filter="trust" aria-pressed="false">Trust</button>
-          <button class="filter-button" type="button" data-filter="retrieval" aria-pressed="false">Retrieval</button>
-          <button class="filter-button" type="button" data-filter="efficiency" aria-pressed="false">Efficiency</button>
-        </div>
-        <p class="filter-status" aria-live="polite">6 publications shown.</p>
-
-        <div class="publication-year" data-year-group>
+        <div class="publication-year">
           <h3>2026</h3>
           <div class="publication-list">
-            <article class="publication reveal" data-topic="trust">
+            <article class="publication">
               <div class="publication-meta">
                 <span class="tag">CVPR 2026 Highlight</span>
                 <span class="tag neutral">Uncertainty</span>
@@ -183,7 +174,7 @@
               </div>
             </article>
 
-            <article class="publication reveal" data-topic="trust">
+            <article class="publication">
               <div class="publication-meta">
                 <span class="tag">ACL 2026 Main</span>
                 <span class="tag">First Author</span>
@@ -201,7 +192,7 @@
               </div>
             </article>
 
-            <article class="publication reveal" data-topic="retrieval">
+            <article class="publication">
               <div class="publication-meta">
                 <span class="tag">ACL 2026 Main</span>
                 <span class="tag">Co-first Author</span>
@@ -221,7 +212,7 @@
               </div>
             </article>
 
-            <article class="publication reveal" data-topic="trust">
+            <article class="publication">
               <div class="publication-meta">
                 <span class="tag">Journal</span>
                 <span class="tag">Co-first Author</span>
@@ -241,10 +232,10 @@
           </div>
         </div>
 
-        <div class="publication-year" data-year-group>
+        <div class="publication-year">
           <h3>2025</h3>
           <div class="publication-list">
-            <article class="publication reveal" data-topic="efficiency">
+            <article class="publication">
               <div class="publication-meta">
                 <span class="tag">First Author</span>
                 <span class="tag neutral">Efficiency</span>
@@ -254,7 +245,7 @@
               <p class="venue">Annual Conference on Human and Language Technology, pp. 14-18.</p>
             </article>
 
-            <article class="publication reveal" data-topic="retrieval">
+            <article class="publication">
               <div class="publication-meta">
                 <span class="tag">RAG</span>
                 <span class="tag neutral">Self-Verification</span>
@@ -276,15 +267,15 @@
           <h2 id="background-title">Engineering background for language-model research</h2>
         </div>
         <div class="timeline">
-          <article class="timeline-item reveal">
+          <article class="timeline-item">
             <span>Education</span>
-            <p>Software Engineering and Mechanical Engineering background at Sejong University.</p>
+            <p>Studied Software Engineering and Mechanical Engineering at Sejong University.</p>
           </article>
-          <article class="timeline-item reveal">
+          <article class="timeline-item">
             <span>Systems Foundation</span>
             <p>Built projects across FEM simulation, autonomous-driving perception/control, and reinforcement-learning workflows before focusing on NLP systems.</p>
           </article>
-          <article class="timeline-item reveal">
+          <article class="timeline-item">
             <span>Recognition</span>
             <p>Received an Academic Excellence Scholarship and Silver Prize in the Sejong SW-AI Hackathon Python track.</p>
           </article>
@@ -294,7 +285,7 @@
       <section class="section" id="themes" aria-labelledby="themes-title">
         <div class="section-heading">
           <p class="eyebrow">Themes and Skills</p>
-          <h2 id="themes-title">Methods, systems, and implementation habits</h2>
+          <h2 id="themes-title">Methods and systems experience</h2>
         </div>
         <div class="theme-layout">
           <div>
@@ -353,7 +344,7 @@
           </a>
           <a class="link-card" href="https://scholar.google.com/citations?user=nRoZ314AAAAJ&hl=en">
             <span>Google Scholar</span>
-            <strong>scholar profile</strong>
+            <strong>Google Scholar profile</strong>
           </a>
           <a class="link-card" href="mailto:aa007878@korea.ac.kr">
             <span>Email</span>
