@@ -10,4 +10,4 @@ The site is a small static HTML/CSS/JavaScript project focused on:
 - technical themes and public links
 
 It keeps the public site limited to research profile, publications, technical themes, and confirmed public links.
-Source documents, transcripts, slide decks, and private portfolio files are not published here.
+Only the static website files are published here; source materials stay outside the repository.
