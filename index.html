@@ -14,16 +14,21 @@
       content="Efficient, controllable, and trustworthy language-model systems through post-hoc representation methods."
     >
     <meta property="og:type" content="website">
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self' https://gc.zgo.at; connect-src 'self' https://yoon-jeong-ho.goatcounter.com; img-src 'self' https://avatars.githubusercontent.com https://yoon-jeong-ho.goatcounter.com; style-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'"
+    >
     <link rel="stylesheet" href="assets/style.css">
     <script
       data-goatcounter="https://yoon-jeong-ho.goatcounter.com/count"
       async
-      src="//gc.zgo.at/count.js"
+      src="https://gc.zgo.at/count.js"
     ></script>
     <script src="assets/site.js" defer></script>
   </head>
   <body>
     <div class="scroll-progress" aria-hidden="true"></div>
+    <a class="skip-link" href="#top">Skip to content</a>
     <header class="site-header">
       <a class="brand" href="#top" aria-label="Jeongho Yoon home">
         <span class="brand-mark">JY</span>
@@ -38,14 +43,14 @@
       </nav>
     </header>
 
-    <main id="top">
+    <main id="top" tabindex="-1">
       <section class="hero" aria-labelledby="hero-title">
         <div class="hero-copy">
           <p class="eyebrow">NLP / LLM Research</p>
           <h1 id="hero-title">Jeongho Yoon</h1>
           <p class="hero-lede">
-            Representation-centered researcher building efficient and trustworthy language-model
-            systems through post-hoc control of pretrained model behavior.
+            I work on representation-level methods for efficient, privacy-aware, and reliable
+            language-model systems.
           </p>
           <div class="hero-actions" aria-label="Quick links">
             <a class="button primary" href="#publications">View publications</a>
@@ -59,6 +64,10 @@
           <img
             class="profile-image"
             src="https://avatars.githubusercontent.com/u/121810984?v=4"
+            width="128"
+            height="128"
+            decoding="async"
+            fetchpriority="high"
             alt="Jeongho Yoon profile image"
           >
           <div class="profile-title">
@@ -86,18 +95,17 @@
 
       <section class="section intro" aria-label="Research profile">
         <p>
-          My work focuses on making pretrained language models usable under practical
-          constraints: lower compute, reliable retrieval, privacy-preserving inference,
-          calibrated uncertainty, and safer behavior. Rather than treating LLMs as fixed
-          black boxes or simply scaling them up, I study post-hoc methods for transforming,
-          editing, compressing, and evaluating their representations.
+          My work focuses on practical constraints in pretrained language models: lower
+          compute, reliable retrieval, privacy-preserving inference, calibrated uncertainty,
+          and safety evaluation. I study post-hoc methods for transforming, editing,
+          compressing, and evaluating model representations.
         </p>
       </section>
 
       <section class="section" id="research" aria-labelledby="research-title">
         <div class="section-heading">
           <p class="eyebrow">Research Directions</p>
-          <h2 id="research-title">A representation-centered research agenda</h2>
+          <h2 id="research-title">Representation-centered research interests</h2>
         </div>
         <div class="direction-grid">
           <article class="direction-card">
@@ -145,7 +153,7 @@
       <section class="section" id="publications" aria-labelledby="publications-title">
         <div class="section-heading">
           <p class="eyebrow">Publications</p>
-          <h2 id="publications-title">Selected research output</h2>
+          <h2 id="publications-title">Selected publications</h2>
         </div>
         <div class="publication-filters" aria-label="Filter publications">
           <button class="filter-button active" type="button" data-filter="all" aria-pressed="true">All</button>
@@ -169,7 +177,7 @@
                 </a>
               </h4>
               <p>Yongchan Chun, Chanhee Park, <strong>Jeongho Yoon</strong>, Jaehyung Seo, Heuiseok Lim.</p>
-              <p class="venue">arXiv:2604.08627. Accepted to CVPR 2026 Highlight.</p>
+              <p class="venue">arXiv:2604.08627. Accepted to CVPR 2026 as a Highlight.</p>
               <div class="paper-actions">
                 <a href="https://arxiv.org/abs/2604.08627">arXiv</a>
               </div>
@@ -265,7 +273,7 @@
       <section class="section" id="background" aria-labelledby="background-title">
         <div class="section-heading">
           <p class="eyebrow">Background</p>
-          <h2 id="background-title">Engineering background in language-model research</h2>
+          <h2 id="background-title">Engineering background for language-model research</h2>
         </div>
         <div class="timeline">
           <article class="timeline-item reveal">
