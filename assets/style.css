@@ -54,6 +54,25 @@ a:hover {
   text-decoration-color: currentColor;
 }
 
+.skip-link {
+  position: fixed;
+  top: 12px;
+  left: 16px;
+  z-index: 100;
+  padding: 8px 12px;
+  border-radius: 8px;
+  background: var(--ink);
+  color: #ffffff;
+  font-weight: 760;
+  text-decoration: none;
+  transform: translateY(-160%);
+  transition: transform 160ms ease;
+}
+
+.skip-link:focus-visible {
+  transform: translateY(0);
+}
+
 .site-header {
   position: sticky;
   top: 0;
@@ -695,19 +714,13 @@ h4 {
 
   .nav {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     gap: 6px;
-    overflow-x: auto;
     padding: 5px;
-    scrollbar-width: none;
-  }
-
-  .nav::-webkit-scrollbar {
-    display: none;
   }
 
   .nav a {
-    flex: 0 0 auto;
+    flex: 1 1 calc(33.333% - 8px);
     padding: 6px 8px;
     font-size: 0.84rem;
   }
