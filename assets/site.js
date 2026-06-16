@@ -20,34 +20,59 @@ const updateActiveNav = () => {
   });
 };
 
-const revealObserver = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("is-visible");
-        revealObserver.unobserve(entry.target);
-      }
-    });
-  },
-  { threshold: 0.14 }
-);
+if ("IntersectionObserver" in window) {
+  const revealObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-visible");
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.14 }
+  );
 
-document.querySelectorAll(".reveal, .direction-card").forEach((element) => {
-  element.classList.add("reveal");
-  revealObserver.observe(element);
-});
+  document.documentElement.classList.add("can-reveal");
 
-document.querySelectorAll(".filter-button").forEach((button) => {
+  document.querySelectorAll(".reveal, .direction-card").forEach((element) => {
+    element.classList.add("reveal");
+    revealObserver.observe(element);
+  });
+}
+
+const filterButtons = [...document.querySelectorAll(".filter-button")];
+const publications = [...document.querySelectorAll(".publication")];
+const publicationYearGroups = [...document.querySelectorAll("[data-year-group]")];
+const filterStatus = document.querySelector(".filter-status");
+
+const updatePublicationFilter = (filter) => {
+  filterButtons.forEach((button) => {
+    const isActive = button.dataset.filter === filter;
+    button.classList.toggle("active", isActive);
+    button.setAttribute("aria-pressed", String(isActive));
+  });
+
+  publications.forEach((paper) => {
+    paper.classList.toggle("is-hidden", filter !== "all" && paper.dataset.topic !== filter);
+  });
+
+  publicationYearGroups.forEach((group) => {
+    const hasVisiblePaper = [...group.querySelectorAll(".publication")].some(
+      (paper) => !paper.classList.contains("is-hidden")
+    );
+    group.classList.toggle("is-hidden", !hasVisiblePaper);
+  });
+
+  const visibleCount = publications.filter((paper) => !paper.classList.contains("is-hidden")).length;
+  if (filterStatus) {
+    filterStatus.textContent = `${visibleCount} publication${visibleCount === 1 ? "" : "s"} shown.`;
+  }
+};
+
+filterButtons.forEach((button) => {
   button.addEventListener("click", () => {
-    const filter = button.dataset.filter;
-
-    document.querySelectorAll(".filter-button").forEach((item) => {
-      item.classList.toggle("active", item === button);
-    });
-
-    document.querySelectorAll(".publication").forEach((paper) => {
-      paper.classList.toggle("is-hidden", filter !== "all" && paper.dataset.topic !== filter);
-    });
+    updatePublicationFilter(button.dataset.filter);
   });
 });
 
@@ -59,3 +84,4 @@ window.addEventListener("scroll", () => {
 window.addEventListener("resize", updateProgress);
 updateProgress();
 updateActiveNav();
+updatePublicationFilter("all");
