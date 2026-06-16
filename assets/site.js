@@ -16,7 +16,13 @@ const updateActiveNav = () => {
     .at(-1);
 
   navLinks.forEach((link) => {
-    link.classList.toggle("active", current && link.getAttribute("href") === `#${current.id}`);
+    const isActive = Boolean(current && link.getAttribute("href") === `#${current.id}`);
+    link.classList.toggle("active", isActive);
+    if (isActive) {
+      link.setAttribute("aria-current", "location");
+    } else {
+      link.removeAttribute("aria-current");
+    }
   });
 };
 
@@ -76,10 +82,24 @@ filterButtons.forEach((button) => {
   });
 });
 
-window.addEventListener("scroll", () => {
+let scrollTicking = false;
+
+const updateOnScroll = () => {
   updateProgress();
   updateActiveNav();
-});
+  scrollTicking = false;
+};
+
+window.addEventListener(
+  "scroll",
+  () => {
+    if (!scrollTicking) {
+      window.requestAnimationFrame(updateOnScroll);
+      scrollTicking = true;
+    }
+  },
+  { passive: true }
+);
 
 window.addEventListener("resize", updateProgress);
 updateProgress();
