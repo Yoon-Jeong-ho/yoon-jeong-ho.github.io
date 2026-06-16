@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jeongho Yoon | NLP/LLM Research</title>
+    <meta
+      name="description"
+      content="Jeongho Yoon builds efficient, controllable, and trustworthy language-model systems through post-hoc representation methods."
+    >
+    <meta property="og:title" content="Jeongho Yoon | NLP/LLM Research">
+    <meta
+      property="og:description"
+      content="Efficient, controllable, and trustworthy language-model systems through post-hoc representation methods."
+    >
+    <meta property="og:type" content="website">
+    <link rel="stylesheet" href="assets/style.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Jeongho Yoon home">
+        <span class="brand-mark">JY</span>
+        <span>Jeongho Yoon</span>
+      </a>
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="#research">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#themes">Themes</a>
+        <a href="#links">Links</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">NLP / LLM Research</p>
+          <h1 id="hero-title">Efficient and trustworthy LLM systems through post-hoc representation control.</h1>
+          <p class="hero-lede">
+            Jeongho Yoon studies how pretrained language models can retrieve more reliably,
+            preserve privacy, expose uncertainty, and run with lower computational cost.
+          </p>
+          <div class="hero-actions" aria-label="Quick links">
+            <a class="button primary" href="#publications">View publications</a>
+            <a class="button secondary" href="https://github.com/Yoon-Jeong-ho">GitHub profile</a>
+          </div>
+        </div>
+        <aside class="profile-panel" aria-label="Research profile summary">
+          <img
+            class="profile-image"
+            src="https://avatars.githubusercontent.com/u/121810984?v=4"
+            alt="Jeongho Yoon profile image"
+          >
+          <div class="metric">
+            <strong>6</strong>
+            <span>publications listed</span>
+          </div>
+          <div class="metric">
+            <strong>2026</strong>
+            <span>CVPR Highlight acceptance</span>
+          </div>
+          <div class="focus-list" aria-label="Research focus areas">
+            <span>Representation Editing</span>
+            <span>Efficient Embeddings</span>
+            <span>RAG and Retrieval</span>
+            <span>Privacy-Preserving Inference</span>
+            <span>Uncertainty Estimation</span>
+            <span>LLM Safety Evaluation</span>
+          </div>
+        </aside>
+      </section>
+
+      <section class="section intro" aria-label="Research profile">
+        <p>
+          My work focuses on making pretrained language models usable under practical
+          constraints: lower compute, reliable retrieval, privacy-preserving inference,
+          calibrated uncertainty, and safer behavior. Rather than treating LLMs as fixed
+          black boxes or simply scaling them up, I study post-hoc methods for transforming,
+          editing, compressing, and evaluating their representations.
+        </p>
+      </section>
+
+      <section class="section" id="research" aria-labelledby="research-title">
+        <div class="section-heading">
+          <p class="eyebrow">Research Directions</p>
+          <h2 id="research-title">A representation-centered research agenda</h2>
+        </div>
+        <div class="direction-grid">
+          <article class="direction-card">
+            <span class="card-number">01</span>
+            <h3>Representation Control</h3>
+            <p>
+              Post-hoc methods for editing, transforming, compressing, and interpreting
+              pretrained model representations.
+            </p>
+            <ul>
+              <li>Sparse autoencoders</li>
+              <li>Language identity removal</li>
+              <li>Evidential transformation</li>
+            </ul>
+          </article>
+          <article class="direction-card">
+            <span class="card-number">02</span>
+            <h3>Efficient Retrieval Systems</h3>
+            <p>
+              Embedding and RAG systems that improve retrieval quality, self-verification,
+              and model efficiency without relying only on scale.
+            </p>
+            <ul>
+              <li>Layer truncation</li>
+              <li>Dense retrieval</li>
+              <li>Self-verifying RAG</li>
+            </ul>
+          </article>
+          <article class="direction-card">
+            <span class="card-number">03</span>
+            <h3>Trustworthy Deployment</h3>
+            <p>
+              Practical methods for privacy-preserving inference, post-hoc uncertainty
+              estimation, and adversarial safety evaluation.
+            </p>
+            <ul>
+              <li>Text-free inference</li>
+              <li>Code redteaming</li>
+              <li>Safety evaluation</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="publications" aria-labelledby="publications-title">
+        <div class="section-heading">
+          <p class="eyebrow">Publications</p>
+          <h2 id="publications-title">Selected research output</h2>
+        </div>
+
+        <div class="publication-year">
+          <h3>2026</h3>
+          <div class="publication-list">
+            <article class="publication">
+              <div class="publication-meta">
+                <span class="tag">CVPR 2026 Highlight</span>
+                <span class="tag neutral">Uncertainty</span>
+              </div>
+              <h4>
+                <a href="https://arxiv.org/abs/2604.08627">
+                  Evidential Transformation Network: Turning Pretrained Models into Evidential Models for Post-hoc Uncertainty Estimation
+                </a>
+              </h4>
+              <p>Yongchan Chun, Chanhee Park, <strong>Jeongho Yoon</strong>, Jaehyung Seo, Heuiseok Lim.</p>
+              <p class="venue">arXiv:2604.08627. Accepted to CVPR 2026 Highlight.</p>
+            </article>
+
+            <article class="publication">
+              <div class="publication-meta">
+                <span class="tag">First Author</span>
+                <span class="tag neutral">Privacy</span>
+              </div>
+              <h4>
+                <a href="https://arxiv.org/abs/2604.06831">
+                  Towards Privacy-Preserving Large Language Model: Text-free Inference Through Alignment and Adaptation
+                </a>
+              </h4>
+              <p><strong>Jeongho Yoon</strong>, Chanhee Park, Yongchan Chun, Hyeonseok Moon, Heuiseok Lim.</p>
+              <p class="venue">arXiv:2604.06831.</p>
+            </article>
+
+            <article class="publication">
+              <div class="publication-meta">
+                <span class="tag">Representation Editing</span>
+                <span class="tag neutral">Retrieval</span>
+              </div>
+              <h4>
+                <a href="https://arxiv.org/abs/2601.04768">
+                  LANGSAE EDITING: Improving Multilingual Information Retrieval via Post-hoc Language Identity Removal
+                </a>
+              </h4>
+              <p>Dongjun Kim, <strong>Jeongho Yoon</strong>, Chanjun Park, Heuiseok Lim.</p>
+              <p class="venue">arXiv:2601.04768.</p>
+            </article>
+
+            <article class="publication">
+              <div class="publication-meta">
+                <span class="tag">Journal</span>
+                <span class="tag neutral">Safety</span>
+              </div>
+              <h4>
+                <a href="https://www.mdpi.com/2227-7390/14/1/189">
+                  Code Redteaming: Probing Ethical Sensitivity of LLMs Through Natural Language Embedded in Code
+                </a>
+              </h4>
+              <p>Chanjun Park, <strong>Jeongho Yoon</strong>, Heuiseok Lim.</p>
+              <p class="venue">Mathematics 14(1), Article 189. DOI: 10.3390/math14010189.</p>
+            </article>
+          </div>
+        </div>
+
+        <div class="publication-year">
+          <h3>2025</h3>
+          <div class="publication-list">
+            <article class="publication">
+              <div class="publication-meta">
+                <span class="tag">First Author</span>
+                <span class="tag neutral">Efficiency</span>
+              </div>
+              <h4>Less Is Enough: Turning LLMs into Efficient Embedders via Layer Truncation</h4>
+              <p><strong>Jeongho Yoon</strong>, A. So, Heuiseok Lim.</p>
+              <p class="venue">Annual Conference on Human and Language Technology, pp. 14-18.</p>
+            </article>
+
+            <article class="publication">
+              <div class="publication-meta">
+                <span class="tag">RAG</span>
+                <span class="tag neutral">Self-Verification</span>
+              </div>
+              <h4>KULLM-RAG: A RAG-Specialized Large Language Model with Intelligent Self-Verification</h4>
+              <p>
+                J. Lee, M. Kim, <strong>Jeongho Yoon</strong>, S. Hong, Y. Jang,
+                S. Lee, J. Seo, C. Park, J. Park, et al.
+              </p>
+              <p class="venue">Annual Conference on Human and Language Technology, pp. 135-140.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="themes" aria-labelledby="themes-title">
+        <div class="section-heading">
+          <p class="eyebrow">Themes and Skills</p>
+          <h2 id="themes-title">Methods, systems, and implementation habits</h2>
+        </div>
+        <div class="theme-layout">
+          <div>
+            <h3>Technical Themes</h3>
+            <ul class="theme-list">
+              <li><strong>Representation-level control:</strong> post-hoc transformation, sparse-autoencoder editing, language identity removal, evidential transformation.</li>
+              <li><strong>Efficient LLM use:</strong> layer truncation, pruning-to-encoder, context compression, long-context chunking.</li>
+              <li><strong>Trustworthy deployment:</strong> privacy-preserving inference, uncertainty estimation, redteaming, safety evaluation.</li>
+              <li><strong>Retrieval systems:</strong> RAG-specialized LLMs, dense retrieval, embedding training, self-verification.</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Selected Skills</h3>
+            <div class="skill-cloud" aria-label="Technical skills">
+              <span>LLMs</span>
+              <span>Transformers</span>
+              <span>Embedding Models</span>
+              <span>Dense Retrieval</span>
+              <span>RAG</span>
+              <span>Long-Context Processing</span>
+              <span>Hugging Face</span>
+              <span>Sparse Autoencoders</span>
+              <span>Uncertainty Estimation</span>
+              <span>Privacy-Preserving NLP</span>
+              <span>Safety Evaluation</span>
+              <span>Python</span>
+              <span>PyTorch / TensorFlow Workflows</span>
+              <span>C Image Processing</span>
+              <span>MATLAB / Simulink</span>
+              <span>ROS / Gazebo</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section links-section" id="links" aria-labelledby="links-title">
+        <div class="section-heading">
+          <p class="eyebrow">Links</p>
+          <h2 id="links-title">Public profiles</h2>
+        </div>
+        <div class="link-row">
+          <a class="link-card" href="https://github.com/Yoon-Jeong-ho">
+            <span>GitHub</span>
+            <strong>github.com/Yoon-Jeong-ho</strong>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>Jeongho Yoon</span>
+      <span>Last updated June 2026</span>
+    </footer>
+  </body>
+</html>
