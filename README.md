@@ -12,5 +12,5 @@ The site is a small static HTML/CSS/JavaScript project focused on:
 It keeps the public site limited to research profile, publications, technical themes, and confirmed public links.
 Only the static website files are published here; source materials stay outside the repository.
 
-Private traffic analytics use GoatCounter's hosted dashboard.
-The public site should not display visitor counts directly.
+Traffic analytics use GoatCounter's hosted dashboard.
+The public site does not display visitor counts directly.
