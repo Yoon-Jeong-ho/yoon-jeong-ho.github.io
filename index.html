@@ -15,8 +15,10 @@
     >
     <meta property="og:type" content="website">
     <link rel="stylesheet" href="assets/style.css">
+    <script src="assets/site.js" defer></script>
   </head>
   <body>
+    <div class="scroll-progress" aria-hidden="true"></div>
     <header class="site-header">
       <a class="brand" href="#top" aria-label="Jeongho Yoon home">
         <span class="brand-mark">JY</span>
@@ -25,6 +27,7 @@
       <nav class="nav" aria-label="Primary navigation">
         <a href="#research">Research</a>
         <a href="#publications">Publications</a>
+        <a href="#background">Background</a>
         <a href="#themes">Themes</a>
         <a href="#links">Links</a>
       </nav>
@@ -34,14 +37,15 @@
       <section class="hero" aria-labelledby="hero-title">
         <div class="hero-copy">
           <p class="eyebrow">NLP / LLM Research</p>
-          <h1 id="hero-title">Efficient and trustworthy LLM systems through post-hoc representation control.</h1>
+          <h1 id="hero-title">Jeongho Yoon</h1>
           <p class="hero-lede">
-            Jeongho Yoon studies how pretrained language models can retrieve more reliably,
-            preserve privacy, expose uncertainty, and run with lower computational cost.
+            Representation-centered researcher building efficient and trustworthy language-model
+            systems through post-hoc control of pretrained model behavior.
           </p>
           <div class="hero-actions" aria-label="Quick links">
             <a class="button primary" href="#publications">View publications</a>
-            <a class="button secondary" href="https://github.com/Yoon-Jeong-ho">GitHub profile</a>
+            <a class="button secondary" href="https://yoonschallenge.tistory.com/">Research blog</a>
+            <a class="button secondary" href="https://github.com/Yoon-Jeong-ho">GitHub</a>
           </div>
         </div>
         <aside class="profile-panel" aria-label="Research profile summary">
@@ -50,13 +54,17 @@
             src="https://avatars.githubusercontent.com/u/121810984?v=4"
             alt="Jeongho Yoon profile image"
           >
-          <div class="metric">
-            <strong>6</strong>
-            <span>publications listed</span>
+          <div class="profile-title">
+            <span>NLP / LLM Researcher</span>
+            <strong>Efficient, controllable, and trustworthy pretrained models.</strong>
           </div>
           <div class="metric">
-            <strong>2026</strong>
-            <span>CVPR Highlight acceptance</span>
+            <strong>ACL 2026</strong>
+            <span>Main Conference papers in privacy-preserving LLMs and multilingual retrieval</span>
+          </div>
+          <div class="metric">
+            <strong>CVPR 2026</strong>
+            <span>Highlight acceptance for post-hoc uncertainty estimation</span>
           </div>
           <div class="focus-list" aria-label="Research focus areas">
             <span>Representation Editing</span>
@@ -132,11 +140,17 @@
           <p class="eyebrow">Publications</p>
           <h2 id="publications-title">Selected research output</h2>
         </div>
+        <div class="publication-filters" aria-label="Filter publications">
+          <button class="filter-button active" type="button" data-filter="all">All</button>
+          <button class="filter-button" type="button" data-filter="trust">Trust</button>
+          <button class="filter-button" type="button" data-filter="retrieval">Retrieval</button>
+          <button class="filter-button" type="button" data-filter="efficiency">Efficiency</button>
+        </div>
 
         <div class="publication-year">
           <h3>2026</h3>
           <div class="publication-list">
-            <article class="publication">
+            <article class="publication reveal" data-topic="trust">
               <div class="publication-meta">
                 <span class="tag">CVPR 2026 Highlight</span>
                 <span class="tag neutral">Uncertainty</span>
@@ -148,10 +162,14 @@
               </h4>
               <p>Yongchan Chun, Chanhee Park, <strong>Jeongho Yoon</strong>, Jaehyung Seo, Heuiseok Lim.</p>
               <p class="venue">arXiv:2604.08627. Accepted to CVPR 2026 Highlight.</p>
+              <div class="paper-actions">
+                <a href="https://arxiv.org/abs/2604.08627">arXiv</a>
+              </div>
             </article>
 
-            <article class="publication">
+            <article class="publication reveal" data-topic="trust">
               <div class="publication-meta">
+                <span class="tag">ACL 2026 Main</span>
                 <span class="tag">First Author</span>
                 <span class="tag neutral">Privacy</span>
               </div>
@@ -161,11 +179,16 @@
                 </a>
               </h4>
               <p><strong>Jeongho Yoon</strong>, Chanhee Park, Yongchan Chun, Hyeonseok Moon, Heuiseok Lim.</p>
-              <p class="venue">arXiv:2604.06831.</p>
+              <p class="venue">Accepted to ACL 2026 Main Conference. arXiv:2604.06831.</p>
+              <div class="paper-actions">
+                <a href="https://arxiv.org/abs/2604.06831">arXiv</a>
+              </div>
             </article>
 
-            <article class="publication">
+            <article class="publication reveal" data-topic="retrieval">
               <div class="publication-meta">
+                <span class="tag">ACL 2026 Main</span>
+                <span class="tag">Co-first Author</span>
                 <span class="tag">Representation Editing</span>
                 <span class="tag neutral">Retrieval</span>
               </div>
@@ -174,11 +197,15 @@
                   LANGSAE EDITING: Improving Multilingual Information Retrieval via Post-hoc Language Identity Removal
                 </a>
               </h4>
-              <p>Dongjun Kim, <strong>Jeongho Yoon</strong>, Chanjun Park, Heuiseok Lim.</p>
-              <p class="venue">arXiv:2601.04768.</p>
+              <p>Dongjun Kim*, <strong>Jeongho Yoon*</strong>, Chanjun Park, Heuiseok Lim. <span class="equal-note">*Equal contribution.</span></p>
+              <p class="venue">Accepted to ACL 2026 Main Conference. arXiv:2601.04768.</p>
+              <div class="paper-actions">
+                <a href="https://arxiv.org/abs/2601.04768">arXiv</a>
+                <a href="https://github.com/Yoon-Jeong-ho/LangSAE-Editing">Code</a>
+              </div>
             </article>
 
-            <article class="publication">
+            <article class="publication reveal" data-topic="trust">
               <div class="publication-meta">
                 <span class="tag">Journal</span>
                 <span class="tag neutral">Safety</span>
@@ -190,6 +217,9 @@
               </h4>
               <p>Chanjun Park, <strong>Jeongho Yoon</strong>, Heuiseok Lim.</p>
               <p class="venue">Mathematics 14(1), Article 189. DOI: 10.3390/math14010189.</p>
+              <div class="paper-actions">
+                <a href="https://www.mdpi.com/2227-7390/14/1/189">Article</a>
+              </div>
             </article>
           </div>
         </div>
@@ -197,7 +227,7 @@
         <div class="publication-year">
           <h3>2025</h3>
           <div class="publication-list">
-            <article class="publication">
+            <article class="publication reveal" data-topic="efficiency">
               <div class="publication-meta">
                 <span class="tag">First Author</span>
                 <span class="tag neutral">Efficiency</span>
@@ -207,7 +237,7 @@
               <p class="venue">Annual Conference on Human and Language Technology, pp. 14-18.</p>
             </article>
 
-            <article class="publication">
+            <article class="publication reveal" data-topic="retrieval">
               <div class="publication-meta">
                 <span class="tag">RAG</span>
                 <span class="tag neutral">Self-Verification</span>
@@ -220,6 +250,39 @@
               <p class="venue">Annual Conference on Human and Language Technology, pp. 135-140.</p>
             </article>
           </div>
+        </div>
+      </section>
+
+      <section class="section" id="background" aria-labelledby="background-title">
+        <div class="section-heading">
+          <p class="eyebrow">Background</p>
+          <h2 id="background-title">Implementation-first path into language-model research</h2>
+        </div>
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <span>Education</span>
+            <p>Software Engineering and Mechanical Engineering background at Sejong University.</p>
+          </article>
+          <article class="timeline-item reveal">
+            <span>Research Systems</span>
+            <p>Implemented higher-order beam and FEM-oriented simulation code in C++ and MATLAB.</p>
+          </article>
+          <article class="timeline-item reveal">
+            <span>Autonomous Systems</span>
+            <p>Built LiDAR-camera calibration, sensor fusion, local path planning, and control pipelines with ROS, MATLAB, and Python.</p>
+          </article>
+          <article class="timeline-item reveal">
+            <span>Learning Systems</span>
+            <p>Developed reinforcement-learning and simulation workflows for AMR and autonomous-driving control.</p>
+          </article>
+          <article class="timeline-item reveal">
+            <span>NLP Foundations</span>
+            <p>Built Seq2Seq translation, BERT question-answering, and sentiment-analysis projects before moving into LLM research.</p>
+          </article>
+          <article class="timeline-item reveal">
+            <span>Recognition</span>
+            <p>Received an Academic Excellence Scholarship and Silver Prize in the Sejong SW-AI Hackathon Python track.</p>
+          </article>
         </div>
       </section>
 
@@ -253,10 +316,9 @@
               <span>Privacy-Preserving NLP</span>
               <span>Safety Evaluation</span>
               <span>Python</span>
-              <span>PyTorch / TensorFlow Workflows</span>
-              <span>C Image Processing</span>
-              <span>MATLAB / Simulink</span>
-              <span>ROS / Gazebo</span>
+              <span>PyTorch / TensorFlow</span>
+              <span>LoRA Fine-tuning</span>
+              <span>Simulation and Control</span>
             </div>
           </div>
         </div>
@@ -271,6 +333,22 @@
           <a class="link-card" href="https://github.com/Yoon-Jeong-ho">
             <span>GitHub</span>
             <strong>github.com/Yoon-Jeong-ho</strong>
+          </a>
+          <a class="link-card" href="https://yoonschallenge.tistory.com/">
+            <span>Blog</span>
+            <strong>yoonschallenge.tistory.com</strong>
+          </a>
+          <a class="link-card" href="https://www.linkedin.com/in/jeonghoyoon0419">
+            <span>LinkedIn</span>
+            <strong>in/jeonghoyoon0419</strong>
+          </a>
+          <a class="link-card" href="https://huggingface.co/yoonLM">
+            <span>Hugging Face</span>
+            <strong>huggingface.co/yoonLM</strong>
+          </a>
+          <a class="link-card" href="https://scholar.google.com/scholar?q=%22Jeongho+Yoon%22+%22LANGSAE%22">
+            <span>Google Scholar</span>
+            <strong>publication search</strong>
           </a>
         </div>
       </section>
