@@ -3,13 +3,6 @@ const sections = navLinks
   .map((link) => document.querySelector(link.getAttribute("href")))
   .filter(Boolean);
 
-const ownerQuery = new URLSearchParams(window.location.search);
-const ownerMode = ["owner", "analytics", "stats"].some((key) => ownerQuery.has(key));
-
-document.querySelectorAll("[data-owner-only]").forEach((element) => {
-  element.hidden = !ownerMode;
-});
-
 const updateActiveNav = () => {
   const current = sections
     .filter((section) => section.getBoundingClientRect().top <= 140)
