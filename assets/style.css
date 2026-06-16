@@ -306,6 +306,13 @@ h1 {
 }
 
 .focus-list,
+skill-cloud {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.focus-list,
 .skill-cloud {
   display: flex;
   flex-wrap: wrap;
@@ -714,8 +721,9 @@ h4 {
   }
 
   .owner-analytics {
-    right: 12px;
-    bottom: 12px;
+    position: static;
+    width: min(100% - 24px, var(--max));
+    margin: 8px auto 0;
     font-size: 0.86rem;
   }
 }
