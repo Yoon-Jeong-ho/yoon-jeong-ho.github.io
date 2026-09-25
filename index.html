@@ -4,17 +4,17 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#17202c">
-    <title>Jeongho Yoon | NLP Researcher in Model Representations and Interfaces</title>
+    <title>Jeongho Yoon | NLP &amp; AI Researcher</title>
     <meta
       name="description"
-      content="Jeongho Yoon studies representation-level methods for language models, including privacy-aware inference, multilingual retrieval, post-hoc uncertainty estimation, and input-side safety evaluation."
+      content="Jeongho Yoon is an integrated M.S./Ph.D. student at Korea University. Research in language models, efficient reasoning, retrieval, and agent evaluation."
     >
     <link rel="canonical" href="https://yoon-jeong-ho.github.io/">
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-    <meta property="og:title" content="Jeongho Yoon | NLP Researcher in Model Representations and Interfaces">
+    <meta property="og:title" content="Jeongho Yoon | NLP &amp; AI Researcher">
     <meta
       property="og:description"
-      content="Integrated M.S./Ph.D. student at Korea University studying representation-level methods for language models, with a future focus on efficient reasoning and multimodal systems."
+      content="Integrated M.S./Ph.D. student at Korea University. Working on language models, with interests in efficient reasoning and multimodal learning."
     >
     <meta property="og:type" content="profile">
     <meta property="og:url" content="https://yoon-jeong-ho.github.io/">
@@ -24,7 +24,7 @@
       http-equiv="Content-Security-Policy"
       content="default-src 'self'; script-src 'self' https://gc.zgo.at; connect-src 'self' https://yoon-jeong-ho.goatcounter.com; img-src 'self' data: https://yoon-jeong-ho.goatcounter.com; style-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'"
     >
-    <link rel="stylesheet" href="assets/style.css?v=20260714">
+    <link rel="stylesheet" href="assets/style.css?v=20260925">
     <script
       data-goatcounter="https://yoon-jeong-ho.goatcounter.com/count"
       async
@@ -55,10 +55,9 @@
           <p class="eyebrow">Integrated M.S./Ph.D. Student &middot; Korea University</p>
           <h1 id="hero-title">Jeongho Yoon</h1>
           <p class="hero-lede">
-            I study representation-level methods for language-model systems, with work in
-            raw-text-free inference, multilingual retrieval, post-hoc uncertainty estimation,
-            and input-side safety evaluation. I am now extending this foundation toward
-            efficient reasoning and multimodal models.
+            I work on language models at Korea University's NLP &amp; AI Lab.
+            My research covers private inference, multilingual retrieval, and agent evaluation.
+            I want to make model reasoning more efficient and extend this work to multimodal models.
           </p>
           <p class="availability">
             <span aria-hidden="true"></span>
@@ -73,8 +72,12 @@
             <a href="https://github.com/Yoon-Jeong-ho">GitHub</a>
             <a href="https://huggingface.co/yoonLM">Hugging Face</a>
             <a href="https://www.linkedin.com/in/jeonghoyoon0419">LinkedIn</a>
-            <a href="https://yoonschallenge.tistory.com/">Paper notes (Korean)</a>
+            <a href="https://yoonschallenge.tistory.com/">Blog (Korean)</a>
           </div>
+          <p class="recent-update">
+            <time datetime="2026-09">September 2026</time>
+            <a href="#agenthop">AgentHop accepted at NeurIPS 2026, Evaluations and Datasets Track (Poster).</a>
+          </p>
         </div>
 
         <aside class="profile-panel" aria-label="Current research profile">
@@ -104,42 +107,44 @@
               <dt>Advisor</dt>
               <dd><a href="https://scholar.google.com/citations?user=HMTkz7oAAAAJ&amp;hl=en">Prof. Heuiseok Lim</a></dd>
             </div>
-            <div>
-              <dt>Recent work</dt>
-              <dd>Two ACL 2026 long papers: first author on one and equal contributor on the other</dd>
-            </div>
           </dl>
-
-          <div class="focus-list" aria-label="Current and emerging research interests">
-            <span>Efficient Reasoning</span>
-            <span>Model Representations</span>
-            <span>Multimodal Research</span>
-          </div>
           <a class="lab-link" href="https://nlp.korea.ac.kr/">Visit the NLP &amp; AI Lab</a>
         </aside>
       </section>
 
       <section class="section" id="publications" aria-labelledby="publications-title">
-        <div class="section-heading heading-row">
-          <div>
-            <p class="eyebrow">Selected Publications</p>
-            <h2 id="publications-title">Research through concrete interventions</h2>
-          </div>
-          <p>
-            I work at several model interfaces - embeddings, latent inputs, and logits - and
-            evaluate how those interventions affect utility, efficiency, and model behavior.
-          </p>
+        <div class="section-heading">
+          <h2 id="publications-title">Selected Publications</h2>
         </div>
-        <p class="citation-note"><strong>Jeongho Yoon</strong> is shown in bold; an asterisk (*) denotes equal contribution.</p>
+        <p class="citation-note">* Equal contribution.</p>
 
         <div class="publication-year">
           <h3>2026</h3>
           <div class="publication-list">
+            <article class="publication featured" id="agenthop" aria-labelledby="agenthop-title">
+              <div class="publication-meta">
+                <span class="tag">NeurIPS 2026</span>
+                <span class="tag neutral">Poster</span>
+                <span class="tag emphasis">Second Author</span>
+              </div>
+              <h4 id="agenthop-title">AgentHop: A Diagnostic Benchmark for Agentic Multi-Hop Scientific Question Answering</h4>
+              <p class="authors">Chanhee Park, <strong>Jeongho Yoon</strong>, Sungbin Han, Hyeonseok Moon, Heuiseok Lim.</p>
+              <p class="paper-summary">
+                A benchmark of 1,011 scientific questions that tests how agents find and combine
+                evidence across papers. It diagnoses retrieval, synthesis, tool use, and resource management.
+              </p>
+              <p class="paper-role"><strong>My role:</strong> Contributed ideas, assisted with experiments, and helped write the paper.</p>
+              <p class="venue">Accepted to NeurIPS 2026, Evaluations and Datasets Track (Poster).</p>
+              <div class="paper-actions">
+                <a href="https://huggingface.co/datasets/nlpai-lab/agenthop">Dataset</a>
+                <a href="https://github.com/JohnnyNLP/agenthop">Code</a>
+              </div>
+            </article>
+
             <article class="publication featured">
               <div class="publication-meta">
                 <span class="tag">ACL 2026 Long Paper</span>
                 <span class="tag emphasis">First Author</span>
-                <span class="tag neutral">Privacy-Aware Inference</span>
               </div>
               <h4>
                 <a href="https://aclanthology.org/2026.acl-long.1191/">
@@ -148,11 +153,10 @@
               </h4>
               <p class="authors"><strong>Jeongho Yoon</strong>, Chanhee Park, Yongchan Chun, Hyeonseok Moon, Heuiseok Lim.</p>
               <p class="paper-summary">
-                PPFT trains a client-side encoder, server-side projection, and LLM so the server
-                can condition on pooled, noise-injected prompt embeddings rather than raw text,
-                and evaluates the resulting privacy-utility trade-off.
+                PPFT lets a server-side LLM answer from noisy prompt embeddings without receiving
+                the raw text. We study the trade-off between answer quality and resistance to text reconstruction.
               </p>
-              <p class="paper-role"><strong>My role:</strong> I originated the core idea and led the experiments, analysis, and manuscript preparation.</p>
+              <p class="paper-role"><strong>My role:</strong> Led the project from the initial idea through experiments, analysis, and writing.</p>
               <p class="venue">ACL 2026, Volume 1: Long Papers, pp. 25961-25981. DOI: 10.18653/v1/2026.acl-long.1191.</p>
               <div class="paper-actions">
                 <a href="https://aclanthology.org/2026.acl-long.1191/">Paper</a>
@@ -163,8 +167,7 @@
             <article class="publication featured">
               <div class="publication-meta">
                 <span class="tag">ACL 2026 Long Paper</span>
-                <span class="tag emphasis">Equal Contribution</span>
-                <span class="tag neutral">Multilingual Retrieval</span>
+                <span class="tag emphasis">Co-first Author</span>
               </div>
               <h4>
                 <a href="https://aclanthology.org/2026.acl-long.1685/">
@@ -173,12 +176,10 @@
               </h4>
               <p class="authors">Dongjun Kim*, <strong>Jeongho Yoon*</strong>, Chanjun Park, Heuiseok Lim.</p>
               <p class="paper-summary">
-                LangSAE uses a sparse autoencoder to identify and suppress language-associated
-                features in pooled embeddings. On the reported multilingual retrieval benchmarks,
-                it improves ranking quality and cross-language coverage without retraining the
-                base encoder or re-encoding raw text.
+                Uses a sparse autoencoder to remove language-specific features from text embeddings,
+                improving multilingual retrieval without retraining the encoder.
               </p>
-              <p class="paper-role"><strong>My role:</strong> I led the experiments and analysis; I also co-wrote the manuscript.</p>
+              <p class="paper-role"><strong>My role:</strong> Contributed to experiments, analysis, and writing.</p>
               <p class="venue">ACL 2026, Volume 1: Long Papers, pp. 36374-36389. DOI: 10.18653/v1/2026.acl-long.1685.</p>
               <div class="paper-actions">
                 <a href="https://aclanthology.org/2026.acl-long.1685/">Paper</a>
@@ -190,7 +191,6 @@
             <article class="publication">
               <div class="publication-meta">
                 <span class="tag">CVPR 2026 Highlight</span>
-                <span class="tag neutral">Uncertainty Estimation</span>
               </div>
               <h4>
                 <a href="https://openaccess.thecvf.com/content/CVPR2026/html/Chun_Evidential_Transformation_Network_Turning_Pretrained_Models_into_Evidential_Models_for_CVPR_2026_paper.html">
@@ -199,11 +199,10 @@
               </h4>
               <p class="authors">Yongchan Chun, Chanhee Park, <strong>Jeongho Yoon</strong>, Jaehyung Seo, Heuiseok Lim.</p>
               <p class="paper-summary">
-                ETN learns a lightweight transformation of pretrained logits into Dirichlet
-                evidence for in- and out-of-distribution uncertainty estimation across vision
-                classification and LLM question answering.
+                Adds uncertainty estimates to pretrained models through a lightweight transformation
+                of their output logits, evaluated on image classification and LLM question answering.
               </p>
-              <p class="paper-role"><strong>My role:</strong> I contributed foundational experimental work and helped prepare the manuscript.</p>
+              <p class="paper-role"><strong>My role:</strong> Contributed to initial experiments and writing.</p>
               <p class="venue">CVPR 2026, pp. 6157-6166. Selected as a Highlight.</p>
               <div class="paper-actions">
                 <a href="https://openaccess.thecvf.com/content/CVPR2026/html/Chun_Evidential_Transformation_Network_Turning_Pretrained_Models_into_Evidential_Models_for_CVPR_2026_paper.html">Paper</a>
@@ -215,8 +214,7 @@
             <article class="publication">
               <div class="publication-meta">
                 <span class="tag">Mathematics 2026</span>
-                <span class="tag emphasis">Equal Contribution</span>
-                <span class="tag neutral">Code Safety Evaluation</span>
+                <span class="tag emphasis">Co-first Author</span>
               </div>
               <h4>
                 <a href="https://www.mdpi.com/2227-7390/14/1/189">
@@ -225,11 +223,10 @@
               </h4>
               <p class="authors">Chanjun Park*, <strong>Jeongho Yoon*</strong>, Heuiseok Lim.</p>
               <p class="paper-summary">
-                Code Redteaming inserts ethically problematic natural language into comments,
-                identifiers, and other natural-language-bearing regions of Python and C code,
-                then evaluates how reliably 18 LLMs detect it.
+                Tests whether 18 LLMs detect ethically problematic language when it appears in
+                code comments, identifiers, and other parts of Python and C programs.
               </p>
-              <p class="paper-role"><strong>My role:</strong> I led the experiments and analysis; I also co-wrote the manuscript.</p>
+              <p class="paper-role"><strong>My role:</strong> Contributed to experiments, analysis, and writing.</p>
               <p class="venue">Mathematics 14(1), Article 189. DOI: 10.3390/math14010189.</p>
               <div class="paper-actions">
                 <a href="https://www.mdpi.com/2227-7390/14/1/189">Article</a>
@@ -244,7 +241,6 @@
             <article class="publication">
               <div class="publication-meta">
                 <span class="tag emphasis">First Author</span>
-                <span class="tag neutral">Efficient Embeddings</span>
               </div>
               <h4>
                 <a href="https://sites.google.com/view/hclt-2025/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8">
@@ -252,15 +248,14 @@
                 </a>
               </h4>
               <p class="authors"><strong>Jeongho Yoon</strong>, Aram So, Heuiseok Lim.</p>
-              <p class="paper-summary">Repurposes a decoder-only LLM as a text embedder by truncating upper transformer layers and measuring the retained retrieval quality.</p>
-              <p class="paper-role"><strong>My role:</strong> I designed and conducted the study end to end.</p>
+              <p class="paper-summary">Studies how many upper layers can be removed from an LLM used as a text embedder while retaining retrieval quality.</p>
+              <p class="paper-role"><strong>My role:</strong> Designed and carried out the study from start to finish.</p>
               <p class="venue">37th Annual Conference on Human &amp; Cognitive Language Technology (HCLT 2025), pp. 14-18.</p>
             </article>
 
             <article class="publication">
               <div class="publication-meta">
                 <span class="tag">HCLT 2025 Outstanding Paper</span>
-                <span class="tag neutral">RAG</span>
               </div>
               <h4>
                 <a href="https://sites.google.com/view/hclt-2025/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8">
@@ -271,8 +266,8 @@
                 Jungseob Lee, Minhyuk Kim, <strong>Jeongho Yoon</strong>, Seongtae Hong,
                 Youngjun Jang, Seungyoon Lee, Jaehyung Seo, Chanjun Park, Jeongbae Park, Heuiseok Lim.
               </p>
-              <p class="paper-summary">Fine-tunes a Korean-English RAG-specialized model for retrieval-need prediction, distractor rejection, grounded response generation, and self-verification.</p>
-              <p class="paper-role"><strong>My role:</strong> I contributed to the experiments and analysis.</p>
+              <p class="paper-summary">A Korean-English RAG model trained to decide when to retrieve, filter irrelevant evidence, and check its answers.</p>
+              <p class="paper-role"><strong>My role:</strong> Contributed to experiments and analysis.</p>
               <p class="venue">37th Annual Conference on Human &amp; Cognitive Language Technology (HCLT 2025), pp. 135-140.</p>
             </article>
           </div>
@@ -280,44 +275,25 @@
       </section>
 
       <section class="section research-section" id="research" aria-labelledby="research-title">
-        <div class="section-heading heading-row">
-          <div>
-            <p class="eyebrow">Research Agenda</p>
-            <h2 id="research-title">Making advanced models reason more efficiently</h2>
-          </div>
-          <p>
-            My next goal is to reduce redundant computation and intermediate generation in
-            reasoning models while maintaining answer quality, and then extend these methods
-            from language to multimodal systems.
-          </p>
+        <div class="section-heading">
+          <h2 id="research-title">Research Interests</h2>
         </div>
-
-        <div class="direction-grid">
-          <article class="direction-card">
-            <span class="card-number">01</span>
-            <h3>Efficient Reasoning</h3>
-            <p>Develop methods that improve the trade-off between answer quality and computational cost by reducing redundant computation, context processing, and intermediate generation.</p>
-            <p class="direction-status">Primary direction for the next 2-3 years</p>
-          </article>
-          <article class="direction-card">
-            <span class="card-number">02</span>
-            <h3>Representations &amp; Interfaces</h3>
-            <p>Study interventions at the level of embeddings, latent inputs, and logits, including methods that leave the base model unchanged and methods that adapt selected components.</p>
-            <p class="direction-status">Current publication through-line</p>
-          </article>
-          <article class="direction-card">
-            <span class="card-number">03</span>
-            <h3>Multimodal Generalization</h3>
-            <p>Extend methods for efficient reasoning and representation-level control from language models to multimodal models.</p>
-            <p class="direction-status">Emerging research direction</p>
-          </article>
+        <div class="research-copy">
+          <p>
+            How can a model reach a good answer with less computation? I am interested in
+            reducing unnecessary reasoning steps and context processing while preserving answer quality.
+            I also want to bring these ideas to models that work with both text and images.
+          </p>
+          <p>
+            My work so far includes learning useful text representations, studying what they
+            reveal about private inputs, and evaluating how models retrieve evidence and use tools.
+          </p>
         </div>
       </section>
 
       <section class="section" id="background" aria-labelledby="background-title">
         <div class="section-heading">
-          <p class="eyebrow">Background</p>
-          <h2 id="background-title">Research training with an engineering foundation</h2>
+          <h2 id="background-title">Education &amp; Experience</h2>
         </div>
 
         <div class="education-grid">
@@ -344,7 +320,7 @@
 
         <div class="background-columns">
           <div>
-            <h3>Earlier Research &amp; Engineering</h3>
+            <h3>Earlier Experience</h3>
             <div class="experience-list">
               <article>
                 <span>Jul 2023 - Feb 2025</span>
@@ -354,12 +330,12 @@
               <article>
                 <span>2019 - 2024</span>
                 <h4>Autonomous-Driving Systems</h4>
-                <p>Worked across perception, route planning, and control using LiDAR, cameras, ROS, RRT*, Pure Pursuit, PID control, MATLAB/Simulink, and Gazebo-style simulation.</p>
+                <p>Built perception, planning, and control components using LiDAR, cameras, ROS, MATLAB/Simulink, and Gazebo.</p>
               </article>
             </div>
           </div>
           <div>
-            <h3>Selected Recognition</h3>
+            <h3>Awards &amp; Scholarships</h3>
             <ul class="recognition-list">
               <li><strong>Outstanding Paper</strong><span>HCLT 2025 &middot; KULLM-RAG</span></li>
               <li><strong>Second Prize</strong><span>MathWorks MATLAB Student AI Challenge 2024</span></li>
@@ -373,20 +349,19 @@
 
       <section class="section" id="skills" aria-labelledby="skills-title">
         <div class="section-heading">
-          <p class="eyebrow">Methods &amp; Skills</p>
-          <h2 id="skills-title">Methods tied to published and implemented work</h2>
+          <h2 id="skills-title">Skills</h2>
         </div>
         <div class="skill-groups">
           <article>
-            <h3>Research Methods</h3>
-            <p>Sparse autoencoders, representation alignment, dense retrieval, RAG, layer truncation, evidential deep learning, inversion attacks, and ID/OOD evaluation.</p>
+            <h3>Research</h3>
+            <p>Text embeddings, sparse autoencoders, dense retrieval, RAG, agent evaluation, uncertainty estimation, and privacy evaluation.</p>
           </article>
           <article>
             <h3>Implementation</h3>
             <p>Python, PyTorch, Hugging Face Transformers, TensorFlow, LoRA fine-tuning, model evaluation pipelines, data processing, and experiment automation.</p>
           </article>
           <article>
-            <h3>Systems Foundation</h3>
+            <h3>Engineering</h3>
             <p>C/C++, MATLAB/Simulink, ROS, Gazebo, finite-element simulation, image-processing pipelines, autonomous-driving control, and reinforcement learning.</p>
           </article>
         </div>
@@ -394,9 +369,8 @@
 
       <section class="section contact-section" id="contact" aria-labelledby="contact-title">
         <div class="contact-copy">
-          <p class="eyebrow">Contact</p>
-          <h2 id="contact-title">Research internships and collaborations</h2>
-          <p>For internship and collaboration inquiries, please contact me by email.</p>
+          <h2 id="contact-title">Get in Touch</h2>
+          <p>I am looking for research internships and collaborators working on language models, efficient reasoning, or multimodal learning.</p>
           <a class="button primary" href="mailto:aa007878@korea.ac.kr">aa007878@korea.ac.kr</a>
         </div>
         <div class="profile-links" aria-label="External profiles">
@@ -410,7 +384,7 @@
 
     <footer class="site-footer">
       <span>Jeongho Yoon</span>
-      <span>Last updated July 2026</span>
+      <span>Last updated September 2026</span>
     </footer>
   </body>
 </html>
