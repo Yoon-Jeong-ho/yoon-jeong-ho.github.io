@@ -25,31 +25,20 @@
       http-equiv="Content-Security-Policy"
       content="default-src 'self'; script-src 'self' https://gc.zgo.at; connect-src 'self' https://yoon-jeong-ho.goatcounter.com; img-src 'self' data: https://yoon-jeong-ho.goatcounter.com; style-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'"
     >
-    <link rel="stylesheet" href="assets/style.css?v=20261029c">
+    <link rel="stylesheet" href="assets/style.css?v=20261029d">
     <script
       data-goatcounter="https://yoon-jeong-ho.goatcounter.com/count"
       async
       src="https://gc.zgo.at/count.js"
     ></script>
-    <script src="assets/site.js?v=20261029c" defer></script>
+    <script src="assets/site.js?v=20261029d" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#top">Skip to content</a>
 
+    <div class="page-shell">
     <header class="site-header">
-      <a class="brand" href="#top" aria-label="Jeongho Yoon home">
-        <span>Jeongho Yoon</span>
-      </a>
-      <nav class="nav" aria-label="Primary navigation">
-        <a href="#publications">Publications</a>
-        <a href="#preprints">Preprints</a>
-        <a href="#background">Background</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </header>
-
-    <main id="top" tabindex="-1">
-      <section class="hero" aria-labelledby="hero-title">
+      <div class="identity">
         <img
           class="profile-image"
           src="assets/profile.jpg"
@@ -59,12 +48,27 @@
           fetchpriority="high"
           alt="Portrait of Jeongho Yoon"
         >
+        <div class="identity-copy">
+          <h1><a class="brand" href="#top">Jeongho Yoon</a></h1>
+          <p class="korean-name" lang="ko">&#50980;&#51221;&#54840;</p>
+          <p class="affiliation">Integrated M.S./Ph.D. student<br>Korea University</p>
+        </div>
+      </div>
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="#top"><span class="nav-index" aria-hidden="true">01</span>About</a>
+        <a href="#publications"><span class="nav-index" aria-hidden="true">02</span>Publications</a>
+        <a href="#preprints"><span class="nav-index" aria-hidden="true">03</span>Preprints</a>
+        <a href="#background"><span class="nav-index" aria-hidden="true">04</span>Background</a>
+        <a href="#contact"><span class="nav-index" aria-hidden="true">05</span>Contact</a>
+      </nav>
+      <a class="rail-email" href="mailto:aa007878@korea.ac.kr">aa007878@korea.ac.kr</a>
+    </header>
+
+    <main id="top" tabindex="-1">
+      <section class="hero" aria-labelledby="hero-title">
         <div class="hero-copy">
-          <div class="name-line">
-            <h1 id="hero-title">Jeongho Yoon</h1>
-            <span class="korean-name" lang="ko">&#50980;&#51221;&#54840;</span>
-          </div>
-          <p class="affiliation">Integrated M.S./Ph.D. student &middot; Korea University</p>
+          <p class="eyebrow">NLP &amp; AI research</p>
+          <h2 id="hero-title">Language models</h2>
           <p class="intro">
             I work with <a href="https://scholar.google.com/citations?user=HMTkz7oAAAAJ&amp;hl=en">Prof. Heuiseok Lim</a>
             at the <a href="https://nlp.korea.ac.kr/">NLP &amp; AI Lab</a>.
@@ -96,10 +100,24 @@
           <p class="citation-note">* Equal contribution.</p>
         </div>
 
+        <div class="research-tools" hidden>
+          <fieldset class="topic-options" aria-label="Research topics across publications and preprints">
+            <legend>Research topics</legend>
+            <div class="topic-segments">
+              <label><input type="radio" name="research-topic" value="all" checked><span>All work</span></label>
+              <label><input type="radio" name="research-topic" value="privacy"><span>Privacy</span></label>
+              <label><input type="radio" name="research-topic" value="efficiency"><span>Efficient inference</span></label>
+              <label><input type="radio" name="research-topic" value="retrieval"><span>Retrieval</span></label>
+              <label><input type="radio" name="research-topic" value="evaluation"><span>Evaluation</span></label>
+            </div>
+          </fieldset>
+          <p class="research-result" role="status" aria-live="polite" aria-atomic="true"></p>
+        </div>
+
         <div class="publication-year">
           <h3>2026</h3>
           <div class="publication-list">
-            <article class="publication featured" id="agenthop" aria-labelledby="agenthop-title">
+            <article class="publication featured" id="agenthop" data-topics="evaluation" aria-labelledby="agenthop-title">
               <div class="publication-meta">
                 <span class="tag">NeurIPS 2026</span>
                 <span class="tag neutral">Evaluations and Datasets Track</span>
@@ -124,7 +142,7 @@
               </div>
             </article>
 
-            <article class="publication featured" id="ppft" aria-labelledby="ppft-title">
+            <article class="publication featured" id="ppft" data-topics="privacy" aria-labelledby="ppft-title">
               <div class="publication-meta">
                 <span class="tag">ACL 2026 Long Paper</span>
                 <span class="tag neutral">Poster</span>
@@ -148,7 +166,7 @@
               </div>
             </article>
 
-            <article class="publication featured" id="langsae" aria-labelledby="langsae-title">
+            <article class="publication featured" id="langsae" data-topics="retrieval" aria-labelledby="langsae-title">
               <div class="publication-meta">
                 <span class="tag">ACL 2026 Long Paper</span>
                 <span class="tag emphasis">Oral</span>
@@ -173,7 +191,7 @@
               </div>
             </article>
 
-            <article class="publication" id="etn" aria-labelledby="etn-title">
+            <article class="publication" id="etn" data-topics="evaluation" aria-labelledby="etn-title">
               <div class="publication-meta">
                 <span class="tag">CVPR 2026</span>
                 <span class="tag emphasis">Highlight</span>
@@ -197,7 +215,7 @@
               </div>
             </article>
 
-            <article class="publication" id="code-redteaming" aria-labelledby="code-redteaming-title">
+            <article class="publication" id="code-redteaming" data-topics="evaluation" aria-labelledby="code-redteaming-title">
               <div class="publication-meta">
                 <span class="tag">Mathematics 2026</span>
                 <span class="tag emphasis">Co-first Author</span>
@@ -219,7 +237,7 @@
               </div>
             </article>
 
-            <article class="publication" id="multimodal-private-inference" aria-labelledby="multimodal-private-inference-title">
+            <article class="publication" id="multimodal-private-inference" data-topics="privacy" aria-labelledby="multimodal-private-inference-title">
               <div class="publication-meta">
                 <span class="tag">HCLT 2026</span>
                 <span class="tag emphasis">First Author</span>
@@ -242,7 +260,7 @@
               </div>
             </article>
 
-            <article class="publication" id="korean-language-consultation" aria-labelledby="korean-language-consultation-title">
+            <article class="publication" id="korean-language-consultation" data-topics="evaluation" aria-labelledby="korean-language-consultation-title">
               <div class="publication-meta">
                 <span class="tag">HCLT 2026</span>
               </div>
@@ -271,7 +289,7 @@
         <div class="publication-year">
           <h3>2025</h3>
           <div class="publication-list compact-publications">
-            <article class="publication" id="less-is-enough" aria-labelledby="less-is-enough-title">
+            <article class="publication" id="less-is-enough" data-topics="efficiency retrieval" aria-labelledby="less-is-enough-title">
               <div class="publication-meta">
                 <span class="tag">HCLT 2025</span>
                 <span class="tag emphasis">First Author</span>
@@ -290,7 +308,7 @@
               </div>
             </article>
 
-            <article class="publication" id="kullm-rag" aria-labelledby="kullm-rag-title">
+            <article class="publication" id="kullm-rag" data-topics="retrieval" aria-labelledby="kullm-rag-title">
               <div class="publication-meta">
                 <span class="tag">HCLT 2025</span>
                 <span class="tag emphasis">Outstanding Paper</span>
@@ -313,16 +331,21 @@
             </article>
           </div>
         </div>
+        <p class="empty-state" hidden>No publications in this topic.</p>
       </section>
 
       <section class="section" id="preprints" aria-labelledby="preprints-title">
         <div class="section-heading">
-          <h2 id="preprints-title">Preprints</h2>
+          <h2 id="preprints-title" tabindex="-1">Preprints</h2>
+          <p class="topic-context" hidden>
+            <span class="active-topic-name"></span>
+            <button class="reset-topic" type="button">Show all work</button>
+          </p>
         </div>
         <div class="publication-year">
           <h3>2026</h3>
           <div class="publication-list">
-            <article class="publication" id="learning-to-refer" aria-labelledby="learning-to-refer-title">
+            <article class="publication" id="learning-to-refer" data-topics="privacy" aria-labelledby="learning-to-refer-title">
               <div class="publication-meta">
                 <span class="tag neutral">arXiv preprint</span>
                 <span class="tag emphasis">First Author</span>
@@ -346,7 +369,7 @@
                 <a href="https://arxiv.org/pdf/2609.32706" aria-label="Learning to Refer paper (PDF)">Paper (PDF)</a>
               </div>
             </article>
-            <article class="publication" id="funnel-of-thoughts" aria-labelledby="funnel-of-thoughts-title">
+            <article class="publication" id="funnel-of-thoughts" data-topics="efficiency" aria-labelledby="funnel-of-thoughts-title">
               <div class="publication-meta">
                 <span class="tag neutral">arXiv preprint</span>
               </div>
@@ -370,6 +393,7 @@
             </article>
           </div>
         </div>
+        <p class="empty-state" hidden>No preprints in this topic.</p>
       </section>
 
       <section class="section" id="background" aria-labelledby="background-title">
@@ -483,5 +507,6 @@
       <span>Jeongho Yoon</span>
       <span>Last updated October 2026</span>
     </footer>
+    </div>
   </body>
 </html>
