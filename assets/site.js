@@ -79,6 +79,11 @@ if (researchTools && result && publicationSections.every(Boolean)) {
   });
   // A topic selection must never make an existing paper link inaccessible.
   const revealPaper = (id) => {
+    try {
+      id = decodeURIComponent(id);
+    } catch {
+      return;
+    }
     const target = document.getElementById(id);
     const paper = target?.closest(".publication");
     if (paper?.hidden) {
@@ -89,7 +94,10 @@ if (researchTools && result && publicationSections.every(Boolean)) {
   };
   const revealLinkedPaper = () => revealPaper(window.location.hash.slice(1));
   document.querySelectorAll('a[href^="#"]').forEach((link) => {
-    link.addEventListener("click", () => revealPaper(link.getAttribute("href").slice(1)));
+    link.addEventListener("click", (event) => {
+      if (event.defaultPrevented || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+      revealPaper(link.getAttribute("href").slice(1));
+    });
   });
   window.addEventListener("hashchange", revealLinkedPaper);
   window.addEventListener("pageshow", () => {

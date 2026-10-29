@@ -134,7 +134,7 @@ main { min-width: 0; grid-column: 2; }
   .identity-copy { flex: 1 1 10rem; min-width: 0; }
   .profile-image { width: 96px; height: 128px; margin: 0; }
   .korean-name { margin-bottom: 8px; }
-  .nav { flex-direction: row; flex-wrap: wrap; gap: 4px 20px; margin: 22px 0 28px; border-bottom: 1px solid var(--line); }
+  .nav { flex-direction: row; flex-wrap: wrap; gap: 4px 14px; margin: 22px 0 28px; border-bottom: 1px solid var(--line); }
   .nav a { font-size: .8125rem; padding: 8px 0; border-left: 0; border-bottom: 2px solid transparent; }
   .nav a:hover, .nav a.active { border-bottom-color: var(--link); background: none; }
   .nav-index, .rail-email { display: none; }
