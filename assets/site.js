@@ -4,7 +4,8 @@ const sections = navLinks
   .filter(Boolean);
 
 const updateActiveNav = () => {
-  const current = sections
+  const atBottom = window.scrollY + window.innerHeight >= document.documentElement.scrollHeight - 2;
+  const current = atBottom ? sections.at(-1) : sections
     .filter((section) => section.getBoundingClientRect().top <= 140)
     .at(-1);
 
@@ -36,6 +37,7 @@ window.addEventListener(
 );
 
 updateActiveNav();
+window.addEventListener("resize", updateActiveNav);
 
 // Printing includes contributions and citations without changing the reading state.
 let printDetailsState;
