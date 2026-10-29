@@ -36,3 +36,16 @@ window.addEventListener(
 );
 
 updateActiveNav();
+
+// Printing includes contributions and citations without changing the reading state.
+let printDetailsState;
+window.addEventListener("beforeprint", () => {
+  if (printDetailsState) return;
+  printDetailsState = [...document.querySelectorAll(".paper-details")]
+    .map((details) => [details, details.open]);
+  printDetailsState.forEach(([details]) => { details.open = true; });
+});
+window.addEventListener("afterprint", () => {
+  printDetailsState?.forEach(([details, open]) => { details.open = open; });
+  printDetailsState = undefined;
+});

@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#17202c">
+    <meta name="theme-color" content="#ffffff">
     <meta name="google-site-verification" content="YB3_OWKOWjUYiLGNIdu6dwYcM0gyLRrG_w4e9CPzw-M">
     <title>Jeongho Yoon (&#50980;&#51221;&#54840;) | NLP &amp; AI Researcher</title>
     <meta
@@ -25,101 +25,76 @@
       http-equiv="Content-Security-Policy"
       content="default-src 'self'; script-src 'self' https://gc.zgo.at; connect-src 'self' https://yoon-jeong-ho.goatcounter.com; img-src 'self' data: https://yoon-jeong-ho.goatcounter.com; style-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'"
     >
-    <link rel="stylesheet" href="assets/style.css?v=20260925">
+    <link rel="stylesheet" href="assets/style.css?v=20261029">
     <script
       data-goatcounter="https://yoon-jeong-ho.goatcounter.com/count"
       async
       src="https://gc.zgo.at/count.js"
     ></script>
-    <script src="assets/site.js?v=20260714" defer></script>
+    <script src="assets/site.js?v=20261029" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#top">Skip to content</a>
 
     <header class="site-header">
       <a class="brand" href="#top" aria-label="Jeongho Yoon home">
-        <span class="brand-mark" aria-hidden="true">JY</span>
         <span>Jeongho Yoon</span>
       </a>
       <nav class="nav" aria-label="Primary navigation">
         <a href="#publications">Publications</a>
         <a href="#preprints">Preprints</a>
-        <a href="#research">Research</a>
         <a href="#background">Background</a>
-        <a href="#skills">Skills</a>
         <a href="#contact">Contact</a>
       </nav>
     </header>
 
     <main id="top" tabindex="-1">
       <section class="hero" aria-labelledby="hero-title">
+        <img
+          class="profile-image"
+          src="assets/profile.jpg"
+          width="600"
+          height="800"
+          decoding="async"
+          fetchpriority="high"
+          alt="Portrait of Jeongho Yoon"
+        >
         <div class="hero-copy">
-          <p class="eyebrow"><span lang="ko">&#50980;&#51221;&#54840;</span> &middot; Integrated M.S./Ph.D. Student &middot; Korea University</p>
-          <h1 id="hero-title">Jeongho Yoon</h1>
-          <p class="hero-lede">
-            I work on language models at Korea University's NLP &amp; AI Lab.
-            My research covers private inference, multilingual retrieval, and agent evaluation.
-            I want to make model reasoning more efficient and extend this work to multimodal models.
+          <div class="name-line">
+            <h1 id="hero-title">Jeongho Yoon</h1>
+            <span class="korean-name" lang="ko">&#50980;&#51221;&#54840;</span>
+          </div>
+          <p class="affiliation">Integrated M.S./Ph.D. student &middot; Korea University</p>
+          <p class="intro">
+            I work with <a href="https://scholar.google.com/citations?user=HMTkz7oAAAAJ&amp;hl=en">Prof. Heuiseok Lim</a>
+            at the <a href="https://nlp.korea.ac.kr/">NLP &amp; AI Lab</a>.
+            My research spans private inference, multilingual retrieval, and agent evaluation.
+          </p>
+          <p class="intro" id="research">
+            I am interested in making <a href="#funnel-of-thoughts">model reasoning more efficient</a>:
+            using less computation while preserving answer quality, and extending this work to
+            <a href="#multimodal-private-inference">multimodal models</a>.
           </p>
           <p class="availability">
-            <span aria-hidden="true"></span>
             Open to research internships and collaborations.
           </p>
-          <div class="hero-actions" aria-label="Primary actions">
-            <a class="button primary" href="mailto:aa007878@korea.ac.kr">Email me</a>
-            <a class="button secondary" href="#publications">View publications</a>
-            <a class="button secondary" href="https://scholar.google.com/citations?user=nRoZ314AAAAJ&amp;hl=en">Google Scholar</a>
-          </div>
           <div class="hero-links" aria-label="Public profiles">
+            <a href="mailto:aa007878@korea.ac.kr">Email</a>
+            <a href="https://scholar.google.com/citations?user=nRoZ314AAAAJ&amp;hl=en">Google Scholar</a>
             <a href="https://github.com/Yoon-Jeong-ho">GitHub</a>
             <a href="https://huggingface.co/yoonLM">Hugging Face</a>
             <a href="https://www.linkedin.com/in/jeonghoyoon0419">LinkedIn</a>
             <a href="https://openreview.net/profile?id=~Jeongho_Yoon1">OpenReview</a>
             <a href="https://yoonschallenge.tistory.com/">Blog (Korean)</a>
           </div>
-          <p class="recent-update">
-            <time datetime="2026-09">September 2026</time>
-            <a href="#agenthop">AgentHop accepted at NeurIPS 2026, Evaluations and Datasets Track (Poster).</a>
-          </p>
         </div>
-
-        <aside class="profile-panel" aria-label="Current research profile">
-          <div class="profile-head">
-            <img
-              class="profile-image"
-              src="assets/profile.jpg"
-              width="180"
-              height="240"
-              decoding="async"
-              fetchpriority="high"
-              alt="Portrait of Jeongho Yoon"
-            >
-            <div class="profile-title">
-              <span>Graduate Researcher</span>
-              <strong>NLP &amp; AI Lab</strong>
-              <p>Department of Computer Science and Engineering, Korea University</p>
-            </div>
-          </div>
-
-          <dl class="profile-facts">
-            <div>
-              <dt>Program</dt>
-              <dd>Integrated M.S./Ph.D. Program &middot; March 2025 to February 2030 (expected)</dd>
-            </div>
-            <div>
-              <dt>Advisor</dt>
-              <dd><a href="https://scholar.google.com/citations?user=HMTkz7oAAAAJ&amp;hl=en">Prof. Heuiseok Lim</a></dd>
-            </div>
-          </dl>
-          <a class="lab-link" href="https://nlp.korea.ac.kr/">Visit the NLP &amp; AI Lab</a>
-        </aside>
       </section>
 
       <section class="section" id="publications" aria-labelledby="publications-title">
         <div class="section-heading">
-          <h2 id="publications-title">Selected Publications</h2>
+          <h2 id="publications-title">Publications</h2>
+          <p class="citation-note">* Equal contribution.</p>
         </div>
-        <p class="citation-note">* Equal contribution.</p>
 
         <div class="publication-year">
           <h3>2026</h3>
@@ -127,6 +102,7 @@
             <article class="publication featured" id="agenthop" aria-labelledby="agenthop-title">
               <div class="publication-meta">
                 <span class="tag">NeurIPS 2026</span>
+                <span class="tag neutral">Evaluations and Datasets Track</span>
                 <span class="tag neutral">Poster</span>
                 <span class="tag emphasis">Second Author</span>
               </div>
@@ -141,21 +117,24 @@
                 evidence across papers. It diagnoses retrieval, synthesis, tool use, and resource management.
               </p>
               <p class="paper-role"><strong>My role:</strong> Contributed ideas, assisted with experiments, and helped write the paper.</p>
-              <p class="venue">Accepted to NeurIPS 2026, Evaluations and Datasets Track (Poster).</p>
               <div class="paper-actions">
                 <a href="https://arxiv.org/abs/2609.34428">arXiv</a>
                 <a href="https://huggingface.co/datasets/nlpai-lab/agenthop">Dataset</a>
                 <a href="https://github.com/JohnnyNLP/agenthop">Code</a>
               </div>
+              <details class="paper-details">
+                <summary>Citation</summary>
+                <p class="venue">Accepted to NeurIPS 2026, Evaluations and Datasets Track (Poster).</p>
+              </details>
             </article>
 
-            <article class="publication featured">
+            <article class="publication featured" id="ppft" aria-labelledby="ppft-title">
               <div class="publication-meta">
                 <span class="tag">ACL 2026 Long Paper</span>
                 <span class="tag neutral">Poster</span>
                 <span class="tag emphasis">First Author</span>
               </div>
-              <h4>
+              <h4 id="ppft-title">
                 <a href="https://aclanthology.org/2026.acl-long.1191/">
                   Towards Privacy-Preserving Large Language Model: Text-free Inference Through Alignment and Adaptation
                 </a>
@@ -166,20 +145,23 @@
                 the raw text. We study the trade-off between answer quality and resistance to text reconstruction.
               </p>
               <p class="paper-role"><strong>My role:</strong> Led the project from the initial idea through experiments, analysis, and writing.</p>
-              <p class="venue">ACL 2026, Volume 1: Long Papers, pp. 25961-25981. Poster presentation. DOI: 10.18653/v1/2026.acl-long.1191.</p>
               <div class="paper-actions">
                 <a href="https://aclanthology.org/2026.acl-long.1191/">Paper</a>
                 <a href="https://arxiv.org/abs/2604.06831">arXiv</a>
               </div>
+              <details class="paper-details">
+                <summary>Citation</summary>
+                <p class="venue">ACL 2026, Volume 1: Long Papers, pp. 25961-25981. Poster presentation. DOI: 10.18653/v1/2026.acl-long.1191.</p>
+              </details>
             </article>
 
-            <article class="publication featured">
+            <article class="publication featured" id="langsae" aria-labelledby="langsae-title">
               <div class="publication-meta">
                 <span class="tag">ACL 2026 Long Paper</span>
                 <span class="tag emphasis">Oral</span>
                 <span class="tag emphasis">Co-first Author</span>
               </div>
-              <h4>
+              <h4 id="langsae-title">
                 <a href="https://aclanthology.org/2026.acl-long.1685/">
                   LangSAE Editing: Improving Multilingual Information Retrieval via Post-hoc Language Identity Removal
                 </a>
@@ -190,21 +172,24 @@
                 improving multilingual retrieval without retraining the encoder.
               </p>
               <p class="paper-role"><strong>My role:</strong> Contributed to experiments, analysis, and writing.</p>
-              <p class="venue">ACL 2026, Volume 1: Long Papers, pp. 36374-36389. Oral presentation. DOI: 10.18653/v1/2026.acl-long.1685.</p>
               <div class="paper-actions">
                 <a href="https://aclanthology.org/2026.acl-long.1685/">Paper</a>
                 <a href="https://arxiv.org/abs/2601.04768">arXiv</a>
                 <a href="https://github.com/junkim100/LangSAE-Editing">Code</a>
               </div>
+              <details class="paper-details">
+                <summary>Citation</summary>
+                <p class="venue">ACL 2026, Volume 1: Long Papers, pp. 36374-36389. Oral presentation. DOI: 10.18653/v1/2026.acl-long.1685.</p>
+              </details>
             </article>
 
-            <article class="publication">
+            <article class="publication" id="etn" aria-labelledby="etn-title">
               <div class="publication-meta">
                 <span class="tag">CVPR 2026</span>
                 <span class="tag emphasis">Highlight</span>
                 <span class="tag neutral">Poster</span>
               </div>
-              <h4>
+              <h4 id="etn-title">
                 <a href="https://openaccess.thecvf.com/content/CVPR2026/html/Chun_Evidential_Transformation_Network_Turning_Pretrained_Models_into_Evidential_Models_for_CVPR_2026_paper.html">
                   Evidential Transformation Network: Turning Pretrained Models into Evidential Models for Post-hoc Uncertainty Estimation
                 </a>
@@ -215,20 +200,23 @@
                 of their output logits, evaluated on image classification and LLM question answering.
               </p>
               <p class="paper-role"><strong>My role:</strong> Contributed to initial experiments and writing.</p>
-              <p class="venue">CVPR 2026, pp. 6157-6166. Highlight paper; poster presentation.</p>
               <div class="paper-actions">
                 <a href="https://openaccess.thecvf.com/content/CVPR2026/html/Chun_Evidential_Transformation_Network_Turning_Pretrained_Models_into_Evidential_Models_for_CVPR_2026_paper.html">Paper</a>
                 <a href="https://arxiv.org/abs/2604.08627">arXiv</a>
                 <a href="https://github.com/cyc9805/Evidential-Transformation-Network">Code</a>
               </div>
+              <details class="paper-details">
+                <summary>Citation</summary>
+                <p class="venue">CVPR 2026, pp. 6157-6166. Highlight paper; poster presentation.</p>
+              </details>
             </article>
 
-            <article class="publication">
+            <article class="publication" id="code-redteaming" aria-labelledby="code-redteaming-title">
               <div class="publication-meta">
                 <span class="tag">Mathematics 2026</span>
                 <span class="tag emphasis">Co-first Author</span>
               </div>
-              <h4>
+              <h4 id="code-redteaming-title">
                 <a href="https://www.mdpi.com/2227-7390/14/1/189">
                   Code Redteaming: Probing Ethical Sensitivity of LLMs Through Natural Language Embedded in Code
                 </a>
@@ -239,10 +227,13 @@
                 code comments, identifiers, and other parts of Python and C programs.
               </p>
               <p class="paper-role"><strong>My role:</strong> Contributed to experiments, analysis, and writing.</p>
-              <p class="venue">Mathematics 14(1), Article 189. DOI: 10.3390/math14010189.</p>
               <div class="paper-actions">
                 <a href="https://www.mdpi.com/2227-7390/14/1/189">Article</a>
               </div>
+              <details class="paper-details">
+                <summary>Citation</summary>
+                <p class="venue">Mathematics 14(1), Article 189. DOI: 10.3390/math14010189.</p>
+              </details>
             </article>
 
             <article class="publication" id="multimodal-private-inference" aria-labelledby="multimodal-private-inference-title">
@@ -261,12 +252,15 @@
                 raw inputs to the server. The server adapts to the domain using noisy representations.
               </p>
               <p class="paper-role"><strong>My role:</strong> Developed the idea, carried out the experiments, and wrote the paper.</p>
-              <p class="venue">38th Annual Conference on Human and Language Technology (HCLT 2026), pp. 675-679.</p>
               <div class="paper-actions">
                 <a href="https://koreascience.kr/article/CFKO202630043228053.pdf" aria-label="Multimodal Representation Alignment paper (PDF)">Paper (PDF)</a>
                 <a href="https://koreascience.kr/article/CFKO202630043228053.pub?lang=ko">Article</a>
                 <a href="https://github.com/Yoon-Jeong-ho/hclt2026_PPFT_Multimodal">Code</a>
               </div>
+              <details class="paper-details">
+                <summary>Citation</summary>
+                <p class="venue">38th Annual Conference on Human and Language Technology (HCLT 2026), pp. 675-679.</p>
+              </details>
             </article>
 
             <article class="publication" id="korean-language-consultation" aria-labelledby="korean-language-consultation-title">
@@ -287,11 +281,14 @@
                 Supplying the correct rules improves citations but does little to improve the underlying judgments.
               </p>
               <p class="paper-role"><strong>My role:</strong> Contributed to initial experiments and analysis.</p>
-              <p class="venue">38th Annual Conference on Human and Language Technology (HCLT 2026), pp. 657-662.</p>
               <div class="paper-actions">
                 <a href="https://koreascience.kr/article/CFKO202630039641606.pdf" aria-label="Korean Language Consultation paper (PDF)">Paper (PDF)</a>
                 <a href="https://koreascience.kr/article/CFKO202630039641606.pub?lang=ko">Article</a>
               </div>
+              <details class="paper-details">
+                <summary>Citation</summary>
+                <p class="venue">38th Annual Conference on Human and Language Technology (HCLT 2026), pp. 657-662.</p>
+              </details>
             </article>
           </div>
         </div>
@@ -312,11 +309,14 @@
               <p class="authors"><strong>Jeongho Yoon</strong>, Aram So, Heuiseok Lim.</p>
               <p class="paper-summary">Studies how many upper layers can be removed from an LLM used as a text embedder while retaining retrieval quality.</p>
               <p class="paper-role"><strong>My role:</strong> Designed and carried out the study from start to finish.</p>
-              <p class="venue">37th Annual Conference on Human and Language Technology (HCLT 2025), pp. 14-18.</p>
               <div class="paper-actions">
                 <a href="https://koreascience.kr/article/CFKO202533857636981.pdf" aria-label="Less Is Enough paper (PDF)">Paper (PDF)</a>
                 <a href="https://koreascience.kr/article/CFKO202533857636981.pub?lang=ko">Article</a>
               </div>
+              <details class="paper-details">
+                <summary>Citation</summary>
+                <p class="venue">37th Annual Conference on Human and Language Technology (HCLT 2025), pp. 14-18.</p>
+              </details>
             </article>
 
             <article class="publication" id="kullm-rag" aria-labelledby="kullm-rag-title">
@@ -335,11 +335,14 @@
               </p>
               <p class="paper-summary">A Korean-English RAG model trained to decide when to retrieve, filter irrelevant evidence, and check its answers.</p>
               <p class="paper-role"><strong>My role:</strong> Contributed to experiments and analysis.</p>
-              <p class="venue">37th Annual Conference on Human and Language Technology (HCLT 2025), pp. 135-140.</p>
               <div class="paper-actions">
                 <a href="https://koreascience.kr/article/CFKO202533050427020.pdf" aria-label="KULLM-RAG paper (PDF)">Paper (PDF)</a>
                 <a href="https://koreascience.kr/article/CFKO202533050427020.pub?lang=ko">Article</a>
               </div>
+              <details class="paper-details">
+                <summary>Citation</summary>
+                <p class="venue">37th Annual Conference on Human and Language Technology (HCLT 2025), pp. 135-140.</p>
+              </details>
             </article>
           </div>
         </div>
@@ -371,11 +374,14 @@
                 to the original text. This lets a model reuse private strings exactly while reducing
                 plaintext exposure to the service provider.
               </p>
-              <p class="venue">arXiv:2609.32706, 2026.</p>
               <div class="paper-actions">
                 <a href="https://arxiv.org/abs/2609.32706">arXiv</a>
                 <a href="https://arxiv.org/pdf/2609.32706" aria-label="Learning to Refer paper (PDF)">Paper (PDF)</a>
               </div>
+              <details class="paper-details">
+                <summary>Citation</summary>
+                <p class="venue">arXiv:2609.32706, 2026.</p>
+              </details>
             </article>
             <article class="publication" id="funnel-of-thoughts" aria-labelledby="funnel-of-thoughts-title">
               <div class="publication-meta">
@@ -394,30 +400,16 @@
                 the cost of multi-sample inference without additional training.
               </p>
               <p class="paper-role"><strong>My role:</strong> Assisted with initial experiments and helped write the paper.</p>
-              <p class="venue">arXiv:2608.15065, 2026.</p>
               <div class="paper-actions">
                 <a href="https://arxiv.org/abs/2608.15065">arXiv</a>
                 <a href="https://arxiv.org/pdf/2608.15065" aria-label="Funnel of Thoughts paper (PDF)">Paper (PDF)</a>
               </div>
+              <details class="paper-details">
+                <summary>Citation</summary>
+                <p class="venue">arXiv:2608.15065, 2026.</p>
+              </details>
             </article>
           </div>
-        </div>
-      </section>
-
-      <section class="section research-section" id="research" aria-labelledby="research-title">
-        <div class="section-heading">
-          <h2 id="research-title">Research Interests</h2>
-        </div>
-        <div class="research-copy">
-          <p>
-            How can a model reach a good answer with less computation? I am interested in
-            reducing unnecessary reasoning steps and context processing while preserving answer quality.
-            I also want to bring these ideas to models that work with both text and images.
-          </p>
-          <p>
-            My work so far includes learning useful text representations, studying what they
-            reveal about private inputs, and evaluating how models retrieve evidence and use tools.
-          </p>
         </div>
       </section>
 
@@ -520,16 +512,11 @@
 
       <section class="section contact-section" id="contact" aria-labelledby="contact-title">
         <div class="contact-copy">
-          <h2 id="contact-title">Get in Touch</h2>
-          <p>I am looking for research internships and collaborators working on language models, efficient reasoning, or multimodal learning.</p>
-          <a class="button primary" href="mailto:aa007878@korea.ac.kr">aa007878@korea.ac.kr</a>
+          <h2 id="contact-title">Contact</h2>
+          <p>For research internships or collaboration on language models, efficient reasoning, and multimodal learning:</p>
+          <a class="contact-email" href="mailto:aa007878@korea.ac.kr">aa007878@korea.ac.kr</a>
         </div>
-        <div class="profile-links" aria-label="External profiles">
-          <a href="https://scholar.google.com/citations?user=nRoZ314AAAAJ&amp;hl=en"><span>Publications</span><strong>Google Scholar</strong></a>
-          <a href="https://github.com/Yoon-Jeong-ho"><span>Code</span><strong>GitHub</strong></a>
-          <a href="https://huggingface.co/yoonLM"><span>Models &amp; Collections</span><strong>Hugging Face</strong></a>
-          <a href="https://www.linkedin.com/in/jeonghoyoon0419"><span>Professional Profile</span><strong>LinkedIn</strong></a>
-        </div>
+        <a class="back-to-top" href="#top">Back to top</a>
       </section>
     </main>
 
